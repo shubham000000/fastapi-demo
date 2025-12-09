@@ -34,5 +34,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deployment Simulation
-        run: echo "🚀 Deployment triggered! Tests passed successfully."
+      - name: Trigger deployment on local server
+        run: |
+          curl -X POST http://YOUR_LOCAL_IP:9000/hooks/deploy-fastapi
+
