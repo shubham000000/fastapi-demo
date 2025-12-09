@@ -36,5 +36,5 @@ jobs:
     steps:
       - name: Trigger deployment on local server
         run: |
-          curl -X POST http://YOUR_LOCAL_IP:9000/hooks/deploy-fastapi
+          curl -X POST http://192.168.0.163:9000/hooks/deploy-fastapi
 
